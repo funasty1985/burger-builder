@@ -55,7 +55,6 @@ class BurgerBuidler extends Component {
     }
 
     purchaseCancelHandler = () => {
-        console.log('purchaseCancelHandler detected')
         this.setState({purchasing:false})
     }
 

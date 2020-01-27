@@ -2,11 +2,6 @@ import React,{Component, Fragment} from 'react';
 import Button from '../../UI/Button/Button'
 
 class OrderSummary extends Component {
-    // This could be a func component, only for performance checking propose 
-    componentWillUpdate(){
-        console.log('Order Summary will update')
-    }
-
     render(){
         const ingredientSummary = Object.keys(this.props.ingredients)
         .map(igKey => {

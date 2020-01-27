@@ -107,7 +107,6 @@ class ContactData extends Component {
             orderData: formData,
             userId: this.props.userId
         }
-        console.log('see see what have i ordered :::', order)
         this.props.onOrderBurger(order, this.props.token)
     }
 
@@ -131,11 +130,9 @@ class ContactData extends Component {
 
         for (let inputIdentifier in updatedOrderForm){
             formIsValid = updatedOrderForm[inputIdentifier].valid && formIsValid;  
-            console.log('formIsValid for', inputIdentifier,'indside the for loop is ', formIsValid)
         }
 
         this.setState({orderForm: updatedOrderForm, formIsValid});   // the change in input value also change the display value correspondingly
-        console.log('inputChangedHandler',this.state.formIsValid)
     }
 
     render() {

@@ -18,6 +18,5 @@ export const  checkValidatity = (value, rules) => {
     if (rules.maxLength) {
         isValid = value.length <= rules.maxLength && isValid; 
     }
-    console.log('the valiation result is ::', isValid)
     return isValid
 }
